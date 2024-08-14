@@ -51,10 +51,10 @@ fn test() {
             .slice(2..),
         vec![
             &env,
-            // Expect 2 events, the first being the annotation indicating that
-            // the sender (from) is stating that in the context of trnsfrdst (a
-            // transfer destination) the destination address has an associated
-            // memo of "123456".
+            // Expect 2 events, the first being the annotation where the sender
+            // (from) is stating that in the context of trnsfrdst (a transfer
+            // destination) the destination address has an associated memo of
+            // "123456".
             (
                 contract_id.clone(),
                 // Expect these event topics.
