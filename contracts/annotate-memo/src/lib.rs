@@ -4,6 +4,9 @@ use soroban_sdk::{
     Vec,
 };
 
+#[contract]
+pub struct Contract;
+
 #[contracttype]
 #[derive(Clone)]
 pub struct MemoAnnotation {
@@ -11,9 +14,6 @@ pub struct MemoAnnotation {
     address: Address,
     memo: String,
 }
-
-#[contract]
-pub struct Contract;
 
 #[contractimpl]
 impl Contract {
