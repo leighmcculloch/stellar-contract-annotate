@@ -34,7 +34,6 @@ fn test() {
             &env,
             MemoAnnotation {
                 auther: from.clone(),
-                namespace: symbol_short!("trnsfrdst"),
                 address: to.clone(),
                 memo: "123456".into_val(&env),
             },
@@ -64,10 +63,6 @@ fn test() {
                 map![
                     &env,
                     (symbol_short!("auther"), from.clone().to_val()),
-                    (
-                        symbol_short!("namespace"),
-                        symbol_short!("trnsfrdst").to_val()
-                    ),
                     (symbol_short!("address"), to.clone().to_val()),
                     (symbol_short!("memo"), "123456".into_val(&env)),
                 ]

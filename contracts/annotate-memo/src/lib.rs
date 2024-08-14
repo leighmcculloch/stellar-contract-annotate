@@ -14,7 +14,6 @@ pub struct RequiredAuth {
 #[derive(Clone)]
 pub struct MemoAnnotation {
     auther: Address,
-    namespace: Symbol,
     address: Address,
     memo: String,
 }
