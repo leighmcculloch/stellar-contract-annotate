@@ -5,12 +5,6 @@ use soroban_sdk::{
 };
 
 #[contracttype]
-pub struct RequiredAuth {
-    address: Address,
-    args: Vec<Val>,
-}
-
-#[contracttype]
 #[derive(Clone)]
 pub struct MemoAnnotation {
     auther: Address,
